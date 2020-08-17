@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TE_GoalView" customModule="ProjectRoutine" customModuleProvider="target">
+            <connections>
+                <outlet property="goalUnitButton" destination="w5T-Ru-QXk" id="rR7-q0-qa0"/>
+                <outlet property="goalValueButton" destination="DPD-6U-pxy" id="b73-n7-mzi"/>
+                <outlet property="iconImageView" destination="io2-Ik-khX" id="6ZC-yx-neR"/>
+                <outlet property="offButton" destination="r6u-5G-qjL" id="lp8-0C-WBF"/>
+                <outlet property="onButton" destination="iQo-wp-0f1" id="hRT-pQ-abh"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="170"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="1fU-0B-f4B">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="170"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="zxQ-mn-CLZ">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="38"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="flag-big" translatesAutoresizingMaskIntoConstraints="NO" id="io2-Ik-khX">
+                                    <rect key="frame" x="0.0" y="1.5" width="35" height="35"/>
+                                    <color key="tintColor" name="pr_default"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="35" id="4EZ-YI-iO0"/>
+                                        <constraint firstAttribute="height" constant="35" id="w8z-iM-jEh"/>
+                                    </constraints>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="目標の設定" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OJF-ra-HMP">
+                                    <rect key="frame" x="50" y="9" width="364" height="20.5"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="GDn-Gs-bzl">
+                            <rect key="frame" x="0.0" y="54" width="414" height="50"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iQo-wp-0f1">
+                                    <rect key="frame" x="0.0" y="0.0" width="197" height="50"/>
+                                    <color key="backgroundColor" name="pr_default"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="50" id="26s-Jz-OZ6"/>
+                                    </constraints>
+                                    <state key="normal" title="オン">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="tapOnButton:" destination="-1" eventType="touchUpInside" id="Wuu-Ze-vRP"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r6u-5G-qjL">
+                                    <rect key="frame" x="217" y="0.0" width="197" height="50"/>
+                                    <color key="backgroundColor" name="pr_default"/>
+                                    <state key="normal" title="オフ">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="tapOffButton:" destination="-1" eventType="touchUpInside" id="6ba-SX-Lvx"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="r6u-5G-qjL" firstAttribute="height" secondItem="iQo-wp-0f1" secondAttribute="height" id="q8T-C7-63j"/>
+                            </constraints>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="fkW-r7-d42">
+                            <rect key="frame" x="0.0" y="120" width="414" height="50"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DPD-6U-pxy">
+                                    <rect key="frame" x="0.0" y="0.0" width="197" height="50"/>
+                                    <color key="backgroundColor" name="pr_default"/>
+                                    <state key="normal" title="10">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="tapValueButton:" destination="-1" eventType="touchUpInside" id="ePP-oo-FQH"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w5T-Ru-QXk">
+                                    <rect key="frame" x="217" y="0.0" width="197" height="50"/>
+                                    <color key="backgroundColor" name="pr_default"/>
+                                    <state key="normal" title="日">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="tapUnitButton:" destination="-1" eventType="touchUpInside" id="Ld6-y2-9P4"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" name="pr_Orange"/>
+                        </stackView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="w5T-Ru-QXk" firstAttribute="height" secondItem="iQo-wp-0f1" secondAttribute="height" id="DA9-xH-DUD"/>
+                        <constraint firstItem="DPD-6U-pxy" firstAttribute="height" secondItem="iQo-wp-0f1" secondAttribute="height" id="tsx-64-3PV"/>
+                    </constraints>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="1fU-0B-f4B" secondAttribute="trailing" id="Apl-dP-Ns9"/>
+                <constraint firstItem="1fU-0B-f4B" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="C8p-dD-dpN"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="1fU-0B-f4B" secondAttribute="bottom" id="D7N-vv-Txw"/>
+                <constraint firstItem="1fU-0B-f4B" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="sLI-R4-y1K"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="128" y="217"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="flag-big" width="43.5" height="58"/>
+        <namedColor name="pr_Orange">
+            <color red="1" green="0.58399999141693115" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="pr_default">
+            <color red="1" green="0.17599999904632568" blue="0.33300000429153442" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

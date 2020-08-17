@@ -3,18 +3,67 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		000642A724EA04D700C0E846 /* TaskDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 000642A324EA04D600C0E846 /* TaskDetail.storyboard */; };
+		000642A824EA04D700C0E846 /* TaskEdit.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 000642A424EA04D700C0E846 /* TaskEdit.storyboard */; };
+		000642AA24EA04D700C0E846 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 000642A624EA04D700C0E846 /* Main.storyboard */; };
+		000642EC24EA05A200C0E846 /* PR_TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000642EA24EA05A200C0E846 /* PR_TableViewCell.swift */; };
+		000642ED24EA05A200C0E846 /* TaskTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000642EB24EA05A200C0E846 /* TaskTableCell.swift */; };
+		000642F524EA05BE00C0E846 /* StoryboardInstantiatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000642EF24EA05BD00C0E846 /* StoryboardInstantiatable.swift */; };
+		000642F624EA05BE00C0E846 /* CreateFromNibable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000642F024EA05BD00C0E846 /* CreateFromNibable.swift */; };
+		000642F724EA05BE00C0E846 /* ColorChangePostable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000642F124EA05BD00C0E846 /* ColorChangePostable.swift */; };
+		000642F824EA05BE00C0E846 /* ColorChangeObserverable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000642F224EA05BE00C0E846 /* ColorChangeObserverable.swift */; };
+		000642F924EA05BE00C0E846 /* NotificationPostable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000642F324EA05BE00C0E846 /* NotificationPostable.swift */; };
+		000642FA24EA05BE00C0E846 /* NotificationObserverable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000642F424EA05BE00C0E846 /* NotificationObserverable.swift */; };
+		000642FC24EA05C900C0E846 /* PRNotifcationName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000642FB24EA05C800C0E846 /* PRNotifcationName.swift */; };
+		000642FF24EA05DB00C0E846 /* TaskCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000642FE24EA05DB00C0E846 /* TaskCoordinator.swift */; };
+		0006430324EA05F500C0E846 /* TE_IconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0006430124EA05F500C0E846 /* TE_IconView.swift */; };
+		0006430424EA05F500C0E846 /* TE_SelectColorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0006430224EA05F500C0E846 /* TE_SelectColorView.swift */; };
+		0006430724EA061400C0E846 /* TE_GoalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0006430524EA061400C0E846 /* TE_GoalView.swift */; };
+		0006430824EA061400C0E846 /* TE_GoalView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0006430624EA061400C0E846 /* TE_GoalView.xib */; };
+		0006430C24EA062A00C0E846 /* TE_ScheduleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0006430A24EA062A00C0E846 /* TE_ScheduleView.swift */; };
+		0006430D24EA062A00C0E846 /* TE_ScheduleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0006430B24EA062A00C0E846 /* TE_ScheduleView.xib */; };
+		0006431124EA064600C0E846 /* TE_TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0006430F24EA064600C0E846 /* TE_TimerView.swift */; };
+		0006431224EA064600C0E846 /* TE_TimerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0006431024EA064600C0E846 /* TE_TimerView.xib */; };
+		0006431624EA065D00C0E846 /* ButtonWithLabelView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0006431424EA065D00C0E846 /* ButtonWithLabelView.xib */; };
+		0006431724EA065D00C0E846 /* ButtonWithLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0006431524EA065D00C0E846 /* ButtonWithLabelView.swift */; };
+		0006431B24EA066F00C0E846 /* SelectScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0006431924EA066F00C0E846 /* SelectScheduleViewController.swift */; };
+		0006431C24EA066F00C0E846 /* SelectScheduleViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0006431A24EA066F00C0E846 /* SelectScheduleViewController.storyboard */; };
+		0006432024EA068700C0E846 /* SelectTimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0006431E24EA068700C0E846 /* SelectTimerViewController.swift */; };
+		0006432124EA068700C0E846 /* SelectTimerViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0006431F24EA068700C0E846 /* SelectTimerViewController.storyboard */; };
+		0006432624EA069C00C0E846 /* ColorButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0006432324EA069C00C0E846 /* ColorButton.swift */; };
+		0006432724EA069C00C0E846 /* SelectColorViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0006432424EA069C00C0E846 /* SelectColorViewController.storyboard */; };
+		0006432824EA069C00C0E846 /* SelectColorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0006432524EA069C00C0E846 /* SelectColorViewController.swift */; };
+		0006432B24EA06CB00C0E846 /* PRConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0006432A24EA06CA00C0E846 /* PRConfig.swift */; };
+		0006433124EA06FC00C0E846 /* PRTaskSchedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0006432C24EA06FB00C0E846 /* PRTaskSchedule.swift */; };
+		0006433224EA06FC00C0E846 /* PRTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0006432D24EA06FB00C0E846 /* PRTask.swift */; };
+		0006433324EA06FC00C0E846 /* PRTaskGoal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0006432E24EA06FB00C0E846 /* PRTaskGoal.swift */; };
+		0006433424EA06FC00C0E846 /* PRTaskTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0006432F24EA06FB00C0E846 /* PRTaskTime.swift */; };
+		0006433524EA06FC00C0E846 /* PRWeekday.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0006433024EA06FC00C0E846 /* PRWeekday.swift */; };
+		0006433824EA071700C0E846 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0006433724EA071700C0E846 /* Colors.xcassets */; };
+		0006433D24EA073500C0E846 /* TaskEdit_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0006433924EA073500C0E846 /* TaskEdit_ViewController.swift */; };
+		0006433E24EA073500C0E846 /* TaskDetail_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0006433A24EA073500C0E846 /* TaskDetail_ViewController.swift */; };
+		0006433F24EA073500C0E846 /* Main_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0006433B24EA073500C0E846 /* Main_ViewController.swift */; };
+		0006434024EA073500C0E846 /* SemiModal_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0006433C24EA073500C0E846 /* SemiModal_ViewController.swift */; };
+		0006434C24EA07B900C0E846 /* UIColor+Hexadecimal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0006434524EA07B800C0E846 /* UIColor+Hexadecimal.swift */; };
+		0006434D24EA07B900C0E846 /* UIViewController+SegueHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0006434624EA07B800C0E846 /* UIViewController+SegueHandler.swift */; };
+		0006434E24EA07B900C0E846 /* NSObject+GetClassName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0006434724EA07B900C0E846 /* NSObject+GetClassName.swift */; };
+		0006434F24EA07B900C0E846 /* Array+SerchAndRemove.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0006434824EA07B900C0E846 /* Array+SerchAndRemove.swift */; };
+		0006435024EA07B900C0E846 /* Int+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0006434924EA07B900C0E846 /* Int+Extension.swift */; };
+		0006435124EA07B900C0E846 /* UINavigationBar+Transparency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0006434A24EA07B900C0E846 /* UINavigationBar+Transparency.swift */; };
+		0006435224EA07B900C0E846 /* UIButton+HasSelectedable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0006434B24EA07B900C0E846 /* UIButton+HasSelectedable.swift */; };
+		0006435524EA080500C0E846 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0006435424EA080500C0E846 /* SceneDelegate.swift */; };
 		008A2BDF24EA041700E2C990 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 008A2BDE24EA041700E2C990 /* AppDelegate.swift */; };
-		008A2BE124EA041700E2C990 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 008A2BE024EA041700E2C990 /* SceneDelegate.swift */; };
-		008A2BE324EA041700E2C990 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 008A2BE224EA041700E2C990 /* ViewController.swift */; };
-		008A2BE624EA041700E2C990 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 008A2BE424EA041700E2C990 /* Main.storyboard */; };
 		008A2BE824EA041B00E2C990 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 008A2BE724EA041B00E2C990 /* Assets.xcassets */; };
 		008A2BEB24EA041B00E2C990 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 008A2BE924EA041B00E2C990 /* LaunchScreen.storyboard */; };
 		008A2BF624EA041B00E2C990 /* TaskRoutineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 008A2BF524EA041B00E2C990 /* TaskRoutineTests.swift */; };
 		008A2C0124EA041B00E2C990 /* TaskRoutineUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 008A2C0024EA041B00E2C990 /* TaskRoutineUITests.swift */; };
+		2304961A86ABFD58C8ECF64F /* Pods_TaskRoutine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42964B7CC3C2D08061057378 /* Pods_TaskRoutine.framework */; };
+		305FFAFC41DEA78235A4D834 /* Pods_TaskRoutine_TaskRoutineUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD2FFB0F56A117CBE49C231B /* Pods_TaskRoutine_TaskRoutineUITests.framework */; };
+		61C2917241286A586FDE64D6 /* Pods_TaskRoutineTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3829009151A3DF4E1B5CA2F1 /* Pods_TaskRoutineTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,11 +84,57 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		000642A324EA04D600C0E846 /* TaskDetail.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TaskDetail.storyboard; sourceTree = "<group>"; };
+		000642A424EA04D700C0E846 /* TaskEdit.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TaskEdit.storyboard; sourceTree = "<group>"; };
+		000642A624EA04D700C0E846 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		000642EA24EA05A200C0E846 /* PR_TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PR_TableViewCell.swift; sourceTree = "<group>"; };
+		000642EB24EA05A200C0E846 /* TaskTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskTableCell.swift; sourceTree = "<group>"; };
+		000642EF24EA05BD00C0E846 /* StoryboardInstantiatable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryboardInstantiatable.swift; sourceTree = "<group>"; };
+		000642F024EA05BD00C0E846 /* CreateFromNibable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateFromNibable.swift; sourceTree = "<group>"; };
+		000642F124EA05BD00C0E846 /* ColorChangePostable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorChangePostable.swift; sourceTree = "<group>"; };
+		000642F224EA05BE00C0E846 /* ColorChangeObserverable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorChangeObserverable.swift; sourceTree = "<group>"; };
+		000642F324EA05BE00C0E846 /* NotificationPostable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationPostable.swift; sourceTree = "<group>"; };
+		000642F424EA05BE00C0E846 /* NotificationObserverable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationObserverable.swift; sourceTree = "<group>"; };
+		000642FB24EA05C800C0E846 /* PRNotifcationName.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PRNotifcationName.swift; sourceTree = "<group>"; };
+		000642FE24EA05DB00C0E846 /* TaskCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskCoordinator.swift; sourceTree = "<group>"; };
+		0006430124EA05F500C0E846 /* TE_IconView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TE_IconView.swift; sourceTree = "<group>"; };
+		0006430224EA05F500C0E846 /* TE_SelectColorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TE_SelectColorView.swift; sourceTree = "<group>"; };
+		0006430524EA061400C0E846 /* TE_GoalView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TE_GoalView.swift; sourceTree = "<group>"; };
+		0006430624EA061400C0E846 /* TE_GoalView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TE_GoalView.xib; sourceTree = "<group>"; };
+		0006430A24EA062A00C0E846 /* TE_ScheduleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TE_ScheduleView.swift; sourceTree = "<group>"; };
+		0006430B24EA062A00C0E846 /* TE_ScheduleView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TE_ScheduleView.xib; sourceTree = "<group>"; };
+		0006430F24EA064600C0E846 /* TE_TimerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TE_TimerView.swift; sourceTree = "<group>"; };
+		0006431024EA064600C0E846 /* TE_TimerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TE_TimerView.xib; sourceTree = "<group>"; };
+		0006431424EA065D00C0E846 /* ButtonWithLabelView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ButtonWithLabelView.xib; sourceTree = "<group>"; };
+		0006431524EA065D00C0E846 /* ButtonWithLabelView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonWithLabelView.swift; sourceTree = "<group>"; };
+		0006431924EA066F00C0E846 /* SelectScheduleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectScheduleViewController.swift; sourceTree = "<group>"; };
+		0006431A24EA066F00C0E846 /* SelectScheduleViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SelectScheduleViewController.storyboard; sourceTree = "<group>"; };
+		0006431E24EA068700C0E846 /* SelectTimerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectTimerViewController.swift; sourceTree = "<group>"; };
+		0006431F24EA068700C0E846 /* SelectTimerViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SelectTimerViewController.storyboard; sourceTree = "<group>"; };
+		0006432324EA069C00C0E846 /* ColorButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorButton.swift; sourceTree = "<group>"; };
+		0006432424EA069C00C0E846 /* SelectColorViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SelectColorViewController.storyboard; sourceTree = "<group>"; };
+		0006432524EA069C00C0E846 /* SelectColorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectColorViewController.swift; sourceTree = "<group>"; };
+		0006432A24EA06CA00C0E846 /* PRConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PRConfig.swift; sourceTree = "<group>"; };
+		0006432C24EA06FB00C0E846 /* PRTaskSchedule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PRTaskSchedule.swift; sourceTree = "<group>"; };
+		0006432D24EA06FB00C0E846 /* PRTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PRTask.swift; sourceTree = "<group>"; };
+		0006432E24EA06FB00C0E846 /* PRTaskGoal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PRTaskGoal.swift; sourceTree = "<group>"; };
+		0006432F24EA06FB00C0E846 /* PRTaskTime.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PRTaskTime.swift; sourceTree = "<group>"; };
+		0006433024EA06FC00C0E846 /* PRWeekday.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PRWeekday.swift; sourceTree = "<group>"; };
+		0006433724EA071700C0E846 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		0006433924EA073500C0E846 /* TaskEdit_ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskEdit_ViewController.swift; sourceTree = "<group>"; };
+		0006433A24EA073500C0E846 /* TaskDetail_ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskDetail_ViewController.swift; sourceTree = "<group>"; };
+		0006433B24EA073500C0E846 /* Main_ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Main_ViewController.swift; sourceTree = "<group>"; };
+		0006433C24EA073500C0E846 /* SemiModal_ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SemiModal_ViewController.swift; sourceTree = "<group>"; };
+		0006434524EA07B800C0E846 /* UIColor+Hexadecimal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Hexadecimal.swift"; sourceTree = "<group>"; };
+		0006434624EA07B800C0E846 /* UIViewController+SegueHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+SegueHandler.swift"; sourceTree = "<group>"; };
+		0006434724EA07B900C0E846 /* NSObject+GetClassName.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSObject+GetClassName.swift"; sourceTree = "<group>"; };
+		0006434824EA07B900C0E846 /* Array+SerchAndRemove.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+SerchAndRemove.swift"; sourceTree = "<group>"; };
+		0006434924EA07B900C0E846 /* Int+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Int+Extension.swift"; sourceTree = "<group>"; };
+		0006434A24EA07B900C0E846 /* UINavigationBar+Transparency.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UINavigationBar+Transparency.swift"; sourceTree = "<group>"; };
+		0006434B24EA07B900C0E846 /* UIButton+HasSelectedable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+HasSelectedable.swift"; sourceTree = "<group>"; };
+		0006435424EA080500C0E846 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		008A2BDB24EA041700E2C990 /* TaskRoutine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TaskRoutine.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		008A2BDE24EA041700E2C990 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		008A2BE024EA041700E2C990 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		008A2BE224EA041700E2C990 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		008A2BE524EA041700E2C990 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		008A2BE724EA041B00E2C990 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		008A2BEA24EA041B00E2C990 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		008A2BEC24EA041B00E2C990 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +144,15 @@
 		008A2BFC24EA041B00E2C990 /* TaskRoutineUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TaskRoutineUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		008A2C0024EA041B00E2C990 /* TaskRoutineUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskRoutineUITests.swift; sourceTree = "<group>"; };
 		008A2C0224EA041B00E2C990 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		109247B3D542B5FFF8C05BBE /* Pods-TaskRoutine.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TaskRoutine.debug.xcconfig"; path = "Target Support Files/Pods-TaskRoutine/Pods-TaskRoutine.debug.xcconfig"; sourceTree = "<group>"; };
+		2CA8BC31297FC4196FDC7C2E /* Pods-TaskRoutine-TaskRoutineUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TaskRoutine-TaskRoutineUITests.debug.xcconfig"; path = "Target Support Files/Pods-TaskRoutine-TaskRoutineUITests/Pods-TaskRoutine-TaskRoutineUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		3829009151A3DF4E1B5CA2F1 /* Pods_TaskRoutineTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TaskRoutineTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3DDE50736B457FCB99119907 /* Pods-TaskRoutine.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TaskRoutine.release.xcconfig"; path = "Target Support Files/Pods-TaskRoutine/Pods-TaskRoutine.release.xcconfig"; sourceTree = "<group>"; };
+		42964B7CC3C2D08061057378 /* Pods_TaskRoutine.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TaskRoutine.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA696B049368D3BDA7FC3CDE /* Pods-TaskRoutineTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TaskRoutineTests.debug.xcconfig"; path = "Target Support Files/Pods-TaskRoutineTests/Pods-TaskRoutineTests.debug.xcconfig"; sourceTree = "<group>"; };
+		AFE9BECF3ABC26711DD3FE96 /* Pods-TaskRoutineTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TaskRoutineTests.release.xcconfig"; path = "Target Support Files/Pods-TaskRoutineTests/Pods-TaskRoutineTests.release.xcconfig"; sourceTree = "<group>"; };
+		DD2FFB0F56A117CBE49C231B /* Pods_TaskRoutine_TaskRoutineUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TaskRoutine_TaskRoutineUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F138FFB9664F284CBEE1CC59 /* Pods-TaskRoutine-TaskRoutineUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TaskRoutine-TaskRoutineUITests.release.xcconfig"; path = "Target Support Files/Pods-TaskRoutine-TaskRoutineUITests/Pods-TaskRoutine-TaskRoutineUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +160,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2304961A86ABFD58C8ECF64F /* Pods_TaskRoutine.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +168,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				61C2917241286A586FDE64D6 /* Pods_TaskRoutineTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +176,189 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				305FFAFC41DEA78235A4D834 /* Pods_TaskRoutine_TaskRoutineUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		000642E924EA059800C0E846 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				000642EA24EA05A200C0E846 /* PR_TableViewCell.swift */,
+				000642EB24EA05A200C0E846 /* TaskTableCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		000642EE24EA05AC00C0E846 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				000642F224EA05BE00C0E846 /* ColorChangeObserverable.swift */,
+				000642F124EA05BD00C0E846 /* ColorChangePostable.swift */,
+				000642F024EA05BD00C0E846 /* CreateFromNibable.swift */,
+				000642F424EA05BE00C0E846 /* NotificationObserverable.swift */,
+				000642F324EA05BE00C0E846 /* NotificationPostable.swift */,
+				000642EF24EA05BD00C0E846 /* StoryboardInstantiatable.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		000642FD24EA05CE00C0E846 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				000642FE24EA05DB00C0E846 /* TaskCoordinator.swift */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		0006430024EA05E900C0E846 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0006430124EA05F500C0E846 /* TE_IconView.swift */,
+				0006430224EA05F500C0E846 /* TE_SelectColorView.swift */,
+				0006432324EA069C00C0E846 /* ColorButton.swift */,
+				0006432924EA06A200C0E846 /* SelectColorViewController */,
+				0006432224EA068E00C0E846 /* SelectTimerViewController */,
+				0006431D24EA067B00C0E846 /* SelectScheduleViewController */,
+				0006431824EA066300C0E846 /* ButtonWithLabelView */,
+				0006431324EA064C00C0E846 /* TE_TimerView */,
+				0006430E24EA063400C0E846 /* TE_ScheduleView */,
+				0006430924EA061A00C0E846 /* TE_GoalView */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		0006430924EA061A00C0E846 /* TE_GoalView */ = {
+			isa = PBXGroup;
+			children = (
+				0006430524EA061400C0E846 /* TE_GoalView.swift */,
+				0006430624EA061400C0E846 /* TE_GoalView.xib */,
+			);
+			path = TE_GoalView;
+			sourceTree = "<group>";
+		};
+		0006430E24EA063400C0E846 /* TE_ScheduleView */ = {
+			isa = PBXGroup;
+			children = (
+				0006430A24EA062A00C0E846 /* TE_ScheduleView.swift */,
+				0006430B24EA062A00C0E846 /* TE_ScheduleView.xib */,
+			);
+			path = TE_ScheduleView;
+			sourceTree = "<group>";
+		};
+		0006431324EA064C00C0E846 /* TE_TimerView */ = {
+			isa = PBXGroup;
+			children = (
+				0006430F24EA064600C0E846 /* TE_TimerView.swift */,
+				0006431024EA064600C0E846 /* TE_TimerView.xib */,
+			);
+			path = TE_TimerView;
+			sourceTree = "<group>";
+		};
+		0006431824EA066300C0E846 /* ButtonWithLabelView */ = {
+			isa = PBXGroup;
+			children = (
+				0006431524EA065D00C0E846 /* ButtonWithLabelView.swift */,
+				0006431424EA065D00C0E846 /* ButtonWithLabelView.xib */,
+			);
+			path = ButtonWithLabelView;
+			sourceTree = "<group>";
+		};
+		0006431D24EA067B00C0E846 /* SelectScheduleViewController */ = {
+			isa = PBXGroup;
+			children = (
+				0006431A24EA066F00C0E846 /* SelectScheduleViewController.storyboard */,
+				0006431924EA066F00C0E846 /* SelectScheduleViewController.swift */,
+			);
+			path = SelectScheduleViewController;
+			sourceTree = "<group>";
+		};
+		0006432224EA068E00C0E846 /* SelectTimerViewController */ = {
+			isa = PBXGroup;
+			children = (
+				0006431F24EA068700C0E846 /* SelectTimerViewController.storyboard */,
+				0006431E24EA068700C0E846 /* SelectTimerViewController.swift */,
+			);
+			path = SelectTimerViewController;
+			sourceTree = "<group>";
+		};
+		0006432924EA06A200C0E846 /* SelectColorViewController */ = {
+			isa = PBXGroup;
+			children = (
+				0006432424EA069C00C0E846 /* SelectColorViewController.storyboard */,
+				0006432524EA069C00C0E846 /* SelectColorViewController.swift */,
+			);
+			path = SelectColorViewController;
+			sourceTree = "<group>";
+		};
+		0006433624EA070200C0E846 /* DataModels */ = {
+			isa = PBXGroup;
+			children = (
+				0006432D24EA06FB00C0E846 /* PRTask.swift */,
+				0006432E24EA06FB00C0E846 /* PRTaskGoal.swift */,
+				0006432C24EA06FB00C0E846 /* PRTaskSchedule.swift */,
+				0006432F24EA06FB00C0E846 /* PRTaskTime.swift */,
+				0006433024EA06FC00C0E846 /* PRWeekday.swift */,
+			);
+			path = DataModels;
+			sourceTree = "<group>";
+		};
+		0006434124EA073D00C0E846 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				0006434224EA077200C0E846 /* Main_ViewController */,
+				0006433C24EA073500C0E846 /* SemiModal_ViewController.swift */,
+				0006434324EA078000C0E846 /* TaskDetail_ViewController */,
+				0006434424EA078F00C0E846 /* TaskEdit_ViewController */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		0006434224EA077200C0E846 /* Main_ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				0006433B24EA073500C0E846 /* Main_ViewController.swift */,
+				000642A624EA04D700C0E846 /* Main.storyboard */,
+			);
+			path = Main_ViewController;
+			sourceTree = "<group>";
+		};
+		0006434324EA078000C0E846 /* TaskDetail_ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				0006433A24EA073500C0E846 /* TaskDetail_ViewController.swift */,
+				000642A324EA04D600C0E846 /* TaskDetail.storyboard */,
+			);
+			path = TaskDetail_ViewController;
+			sourceTree = "<group>";
+		};
+		0006434424EA078F00C0E846 /* TaskEdit_ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				0006433924EA073500C0E846 /* TaskEdit_ViewController.swift */,
+				000642A424EA04D700C0E846 /* TaskEdit.storyboard */,
+			);
+			path = TaskEdit_ViewController;
+			sourceTree = "<group>";
+		};
+		0006435324EA07C700C0E846 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				000642FB24EA05C800C0E846 /* PRNotifcationName.swift */,
+				0006432A24EA06CA00C0E846 /* PRConfig.swift */,
+				0006434824EA07B900C0E846 /* Array+SerchAndRemove.swift */,
+				0006434924EA07B900C0E846 /* Int+Extension.swift */,
+				0006434724EA07B900C0E846 /* NSObject+GetClassName.swift */,
+				0006434B24EA07B900C0E846 /* UIButton+HasSelectedable.swift */,
+				0006434524EA07B800C0E846 /* UIColor+Hexadecimal.swift */,
+				0006434A24EA07B900C0E846 /* UINavigationBar+Transparency.swift */,
+				0006434624EA07B800C0E846 /* UIViewController+SegueHandler.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		008A2BD224EA041700E2C990 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +366,8 @@
 				008A2BF424EA041B00E2C990 /* TaskRoutineTests */,
 				008A2BFF24EA041B00E2C990 /* TaskRoutineUITests */,
 				008A2BDC24EA041700E2C990 /* Products */,
+				EBD4866BE0565BBEBE5932A5 /* Pods */,
+				893D9EB46A8489CF3D0163AC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -100,9 +385,15 @@
 			isa = PBXGroup;
 			children = (
 				008A2BDE24EA041700E2C990 /* AppDelegate.swift */,
-				008A2BE024EA041700E2C990 /* SceneDelegate.swift */,
-				008A2BE224EA041700E2C990 /* ViewController.swift */,
-				008A2BE424EA041700E2C990 /* Main.storyboard */,
+				0006435424EA080500C0E846 /* SceneDelegate.swift */,
+				0006435324EA07C700C0E846 /* Extensions */,
+				0006434124EA073D00C0E846 /* ViewControllers */,
+				0006430024EA05E900C0E846 /* Views */,
+				0006433624EA070200C0E846 /* DataModels */,
+				000642FD24EA05CE00C0E846 /* Tools */,
+				000642EE24EA05AC00C0E846 /* Protocols */,
+				000642E924EA059800C0E846 /* Cells */,
+				0006433724EA071700C0E846 /* Colors.xcassets */,
 				008A2BE724EA041B00E2C990 /* Assets.xcassets */,
 				008A2BE924EA041B00E2C990 /* LaunchScreen.storyboard */,
 				008A2BEC24EA041B00E2C990 /* Info.plist */,
@@ -128,6 +419,29 @@
 			path = TaskRoutineUITests;
 			sourceTree = "<group>";
 		};
+		893D9EB46A8489CF3D0163AC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				42964B7CC3C2D08061057378 /* Pods_TaskRoutine.framework */,
+				DD2FFB0F56A117CBE49C231B /* Pods_TaskRoutine_TaskRoutineUITests.framework */,
+				3829009151A3DF4E1B5CA2F1 /* Pods_TaskRoutineTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EBD4866BE0565BBEBE5932A5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				109247B3D542B5FFF8C05BBE /* Pods-TaskRoutine.debug.xcconfig */,
+				3DDE50736B457FCB99119907 /* Pods-TaskRoutine.release.xcconfig */,
+				2CA8BC31297FC4196FDC7C2E /* Pods-TaskRoutine-TaskRoutineUITests.debug.xcconfig */,
+				F138FFB9664F284CBEE1CC59 /* Pods-TaskRoutine-TaskRoutineUITests.release.xcconfig */,
+				AA696B049368D3BDA7FC3CDE /* Pods-TaskRoutineTests.debug.xcconfig */,
+				AFE9BECF3ABC26711DD3FE96 /* Pods-TaskRoutineTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +449,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 008A2C0524EA041B00E2C990 /* Build configuration list for PBXNativeTarget "TaskRoutine" */;
 			buildPhases = (
+				071A5A620F8FB906E52B97D0 /* [CP] Check Pods Manifest.lock */,
 				008A2BD724EA041700E2C990 /* Sources */,
 				008A2BD824EA041700E2C990 /* Frameworks */,
 				008A2BD924EA041700E2C990 /* Resources */,
+				2D5AE5DB074DE812B59FD7BB /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -152,6 +468,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 008A2C0824EA041B00E2C990 /* Build configuration list for PBXNativeTarget "TaskRoutineTests" */;
 			buildPhases = (
+				E5DC14494AD9BDCF8BC5B0AB /* [CP] Check Pods Manifest.lock */,
 				008A2BED24EA041B00E2C990 /* Sources */,
 				008A2BEE24EA041B00E2C990 /* Frameworks */,
 				008A2BEF24EA041B00E2C990 /* Resources */,
@@ -170,9 +487,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 008A2C0B24EA041B00E2C990 /* Build configuration list for PBXNativeTarget "TaskRoutineUITests" */;
 			buildPhases = (
+				A25807041EE3168966CD7FB5 /* [CP] Check Pods Manifest.lock */,
 				008A2BF824EA041B00E2C990 /* Sources */,
 				008A2BF924EA041B00E2C990 /* Frameworks */,
 				008A2BFA24EA041B00E2C990 /* Resources */,
+				61A069731F9DC06BB2F93D45 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -233,8 +552,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				008A2BEB24EA041B00E2C990 /* LaunchScreen.storyboard in Resources */,
+				0006431624EA065D00C0E846 /* ButtonWithLabelView.xib in Resources */,
+				0006433824EA071700C0E846 /* Colors.xcassets in Resources */,
+				0006431C24EA066F00C0E846 /* SelectScheduleViewController.storyboard in Resources */,
+				000642A724EA04D700C0E846 /* TaskDetail.storyboard in Resources */,
+				0006430824EA061400C0E846 /* TE_GoalView.xib in Resources */,
+				0006432724EA069C00C0E846 /* SelectColorViewController.storyboard in Resources */,
+				0006430D24EA062A00C0E846 /* TE_ScheduleView.xib in Resources */,
 				008A2BE824EA041B00E2C990 /* Assets.xcassets in Resources */,
-				008A2BE624EA041700E2C990 /* Main.storyboard in Resources */,
+				0006432124EA068700C0E846 /* SelectTimerViewController.storyboard in Resources */,
+				0006431224EA064600C0E846 /* TE_TimerView.xib in Resources */,
+				000642AA24EA04D700C0E846 /* Main.storyboard in Resources */,
+				000642A824EA04D700C0E846 /* TaskEdit.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,14 +583,153 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		071A5A620F8FB906E52B97D0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TaskRoutine-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2D5AE5DB074DE812B59FD7BB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TaskRoutine/Pods-TaskRoutine-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TaskRoutine/Pods-TaskRoutine-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TaskRoutine/Pods-TaskRoutine-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		61A069731F9DC06BB2F93D45 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TaskRoutine-TaskRoutineUITests/Pods-TaskRoutine-TaskRoutineUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TaskRoutine-TaskRoutineUITests/Pods-TaskRoutine-TaskRoutineUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TaskRoutine-TaskRoutineUITests/Pods-TaskRoutine-TaskRoutineUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A25807041EE3168966CD7FB5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TaskRoutine-TaskRoutineUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E5DC14494AD9BDCF8BC5B0AB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TaskRoutineTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		008A2BD724EA041700E2C990 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				008A2BE324EA041700E2C990 /* ViewController.swift in Sources */,
+				0006433524EA06FC00C0E846 /* PRWeekday.swift in Sources */,
+				0006430C24EA062A00C0E846 /* TE_ScheduleView.swift in Sources */,
+				0006434D24EA07B900C0E846 /* UIViewController+SegueHandler.swift in Sources */,
+				0006430424EA05F500C0E846 /* TE_SelectColorView.swift in Sources */,
+				0006432824EA069C00C0E846 /* SelectColorViewController.swift in Sources */,
+				0006435124EA07B900C0E846 /* UINavigationBar+Transparency.swift in Sources */,
+				0006433224EA06FC00C0E846 /* PRTask.swift in Sources */,
 				008A2BDF24EA041700E2C990 /* AppDelegate.swift in Sources */,
-				008A2BE124EA041700E2C990 /* SceneDelegate.swift in Sources */,
+				0006435524EA080500C0E846 /* SceneDelegate.swift in Sources */,
+				000642F824EA05BE00C0E846 /* ColorChangeObserverable.swift in Sources */,
+				0006432B24EA06CB00C0E846 /* PRConfig.swift in Sources */,
+				000642ED24EA05A200C0E846 /* TaskTableCell.swift in Sources */,
+				0006431B24EA066F00C0E846 /* SelectScheduleViewController.swift in Sources */,
+				000642F624EA05BE00C0E846 /* CreateFromNibable.swift in Sources */,
+				0006433E24EA073500C0E846 /* TaskDetail_ViewController.swift in Sources */,
+				0006434C24EA07B900C0E846 /* UIColor+Hexadecimal.swift in Sources */,
+				000642F724EA05BE00C0E846 /* ColorChangePostable.swift in Sources */,
+				0006434E24EA07B900C0E846 /* NSObject+GetClassName.swift in Sources */,
+				0006431124EA064600C0E846 /* TE_TimerView.swift in Sources */,
+				0006434024EA073500C0E846 /* SemiModal_ViewController.swift in Sources */,
+				0006435024EA07B900C0E846 /* Int+Extension.swift in Sources */,
+				0006431724EA065D00C0E846 /* ButtonWithLabelView.swift in Sources */,
+				0006430724EA061400C0E846 /* TE_GoalView.swift in Sources */,
+				0006433424EA06FC00C0E846 /* PRTaskTime.swift in Sources */,
+				000642EC24EA05A200C0E846 /* PR_TableViewCell.swift in Sources */,
+				0006433124EA06FC00C0E846 /* PRTaskSchedule.swift in Sources */,
+				0006432024EA068700C0E846 /* SelectTimerViewController.swift in Sources */,
+				0006433324EA06FC00C0E846 /* PRTaskGoal.swift in Sources */,
+				0006432624EA069C00C0E846 /* ColorButton.swift in Sources */,
+				0006433F24EA073500C0E846 /* Main_ViewController.swift in Sources */,
+				0006430324EA05F500C0E846 /* TE_IconView.swift in Sources */,
+				0006433D24EA073500C0E846 /* TaskEdit_ViewController.swift in Sources */,
+				000642F524EA05BE00C0E846 /* StoryboardInstantiatable.swift in Sources */,
+				000642FC24EA05C900C0E846 /* PRNotifcationName.swift in Sources */,
+				0006434F24EA07B900C0E846 /* Array+SerchAndRemove.swift in Sources */,
+				000642FA24EA05BE00C0E846 /* NotificationObserverable.swift in Sources */,
+				000642F924EA05BE00C0E846 /* NotificationPostable.swift in Sources */,
+				000642FF24EA05DB00C0E846 /* TaskCoordinator.swift in Sources */,
+				0006435224EA07B900C0E846 /* UIButton+HasSelectedable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,14 +765,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		008A2BE424EA041700E2C990 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				008A2BE524EA041700E2C990 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		008A2BE924EA041B00E2C990 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -432,6 +892,7 @@
 		};
 		008A2C0624EA041B00E2C990 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 109247B3D542B5FFF8C05BBE /* Pods-TaskRoutine.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -450,6 +911,7 @@
 		};
 		008A2C0724EA041B00E2C990 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3DDE50736B457FCB99119907 /* Pods-TaskRoutine.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -468,6 +930,7 @@
 		};
 		008A2C0924EA041B00E2C990 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AA696B049368D3BDA7FC3CDE /* Pods-TaskRoutineTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -490,6 +953,7 @@
 		};
 		008A2C0A24EA041B00E2C990 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AFE9BECF3ABC26711DD3FE96 /* Pods-TaskRoutineTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -512,6 +976,7 @@
 		};
 		008A2C0C24EA041B00E2C990 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2CA8BC31297FC4196FDC7C2E /* Pods-TaskRoutine-TaskRoutineUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -532,6 +997,7 @@
 		};
 		008A2C0D24EA041B00E2C990 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F138FFB9664F284CBEE1CC59 /* Pods-TaskRoutine-TaskRoutineUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

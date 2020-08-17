@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ButtonWithLabelView" customModule="ProjectRoutine" customModuleProvider="target">
+            <connections>
+                <outlet property="button" destination="FBq-Zy-oPh" id="tpd-Gl-nJx"/>
+                <outlet property="titleNameLabel" destination="GzY-Vl-QhF" id="g7M-mw-WO0"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="194" height="55"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="yuu-2L-Ngn">
+                    <rect key="frame" x="0.0" y="0.0" width="194" height="55"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FBq-Zy-oPh">
+                            <rect key="frame" x="0.0" y="0.0" width="55" height="55"/>
+                            <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="55" id="7pU-ik-uZh"/>
+                                <constraint firstAttribute="height" constant="55" id="Sn4-XG-6Rd"/>
+                            </constraints>
+                            <connections>
+                                <action selector="tapButton:" destination="-1" eventType="touchUpInside" id="kMj-ia-eny"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GzY-Vl-QhF">
+                            <rect key="frame" x="70" y="2.5" width="124" height="50"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="yuu-2L-Ngn" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="30Y-54-K08"/>
+                <constraint firstItem="yuu-2L-Ngn" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="96y-Zs-VUf"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="yuu-2L-Ngn" secondAttribute="trailing" id="D9D-z4-Pnh"/>
+                <constraint firstItem="yuu-2L-Ngn" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="nGT-Cm-boP"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="-21.739130434782609" y="89.397321428571431"/>
+        </view>
+    </objects>
+</document>

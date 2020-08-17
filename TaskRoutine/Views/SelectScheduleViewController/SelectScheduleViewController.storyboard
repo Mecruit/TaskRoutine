@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="yDA-5y-qgO">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Select Schedule View Controller-->
+        <scene sceneID="fYc-Ws-crJ">
+            <objects>
+                <viewController storyboardIdentifier="SelectScheduleViewController" id="yDA-5y-qgO" customClass="SelectScheduleViewController" customModule="ProjectRoutine" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="drT-oX-5Uk">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1I6-1b-9h5">
+                                <rect key="frame" x="0.0" y="303" width="414" height="290"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NzZ-vR-TlF">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalCentering" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="4PL-7i-lAk">
+                                                <rect key="frame" x="20" y="0.0" width="374" height="60"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="idb-eI-7Kc">
+                                                        <rect key="frame" x="0.0" y="15" width="77" height="30"/>
+                                                        <state key="normal" title="キャンセル">
+                                                            <color key="titleColor" name="textColor"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="tapCancelButton:" destination="yDA-5y-qgO" eventType="touchUpInside" id="vux-wq-7DO"/>
+                                                        </connections>
+                                                    </button>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="スケジュールの設定" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9MJ-Rd-7JV">
+                                                        <rect key="frame" x="120.5" y="20" width="156" height="20.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YfG-xc-sfc">
+                                                        <rect key="frame" x="343" y="15" width="31" height="30"/>
+                                                        <state key="normal" title="保存"/>
+                                                        <connections>
+                                                            <action selector="tapSaveButton:" destination="yDA-5y-qgO" eventType="touchUpInside" id="oS1-ME-xJ4"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <constraints>
+                                            <constraint firstItem="4PL-7i-lAk" firstAttribute="top" secondItem="NzZ-vR-TlF" secondAttribute="top" id="7FJ-Zk-6ft"/>
+                                            <constraint firstAttribute="height" constant="60" id="Nsq-Zq-wAf"/>
+                                            <constraint firstItem="4PL-7i-lAk" firstAttribute="leading" secondItem="NzZ-vR-TlF" secondAttribute="leading" constant="20" id="UcB-ON-xcf"/>
+                                            <constraint firstAttribute="trailing" secondItem="4PL-7i-lAk" secondAttribute="trailing" constant="20" id="Xnd-0E-P1S"/>
+                                            <constraint firstAttribute="bottom" secondItem="4PL-7i-lAk" secondAttribute="bottom" id="znZ-49-wXW"/>
+                                        </constraints>
+                                    </view>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Ubu-eZ-LWw">
+                                        <rect key="frame" x="15" y="65" width="384" height="205"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="hWM-5h-Rs9">
+                                                <rect key="frame" x="0.0" y="0.0" width="384" height="205"/>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstItem="Ubu-eZ-LWw" firstAttribute="leading" secondItem="1I6-1b-9h5" secondAttribute="leading" constant="15" id="F1A-mJ-Ao9"/>
+                                    <constraint firstItem="Ubu-eZ-LWw" firstAttribute="top" secondItem="NzZ-vR-TlF" secondAttribute="bottom" constant="5" id="Hw9-DM-ibx"/>
+                                    <constraint firstAttribute="height" constant="290" id="MDf-6B-HF9"/>
+                                    <constraint firstAttribute="trailing" secondItem="NzZ-vR-TlF" secondAttribute="trailing" id="Orl-gd-3qt"/>
+                                    <constraint firstItem="NzZ-vR-TlF" firstAttribute="top" secondItem="1I6-1b-9h5" secondAttribute="top" id="R1e-Qn-VTW"/>
+                                    <constraint firstAttribute="trailing" secondItem="Ubu-eZ-LWw" secondAttribute="trailing" constant="15" id="TsC-Mp-Za6"/>
+                                    <constraint firstAttribute="bottom" secondItem="Ubu-eZ-LWw" secondAttribute="bottom" constant="20" id="YxP-Bq-4GJ"/>
+                                    <constraint firstItem="NzZ-vR-TlF" firstAttribute="leading" secondItem="1I6-1b-9h5" secondAttribute="leading" id="i5A-Bm-QIB"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="1I6-1b-9h5" firstAttribute="centerY" secondItem="drT-oX-5Uk" secondAttribute="centerY" id="ed2-hh-KHt"/>
+                            <constraint firstItem="mHi-6z-AWw" firstAttribute="trailing" secondItem="1I6-1b-9h5" secondAttribute="trailing" id="fOO-hx-V5O"/>
+                            <constraint firstItem="1I6-1b-9h5" firstAttribute="centerX" secondItem="drT-oX-5Uk" secondAttribute="centerX" id="fgq-t4-kmn"/>
+                            <constraint firstItem="1I6-1b-9h5" firstAttribute="leading" secondItem="mHi-6z-AWw" secondAttribute="leading" id="hhd-7J-Wcq"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="mHi-6z-AWw"/>
+                    </view>
+                    <connections>
+                        <outlet property="stackButtonView" destination="hWM-5h-Rs9" id="a4V-Zi-dio"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Nmp-5r-y7V" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="96.428571428571431"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="textColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </namedColor>
+    </resources>
+</document>

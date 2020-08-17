@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="4a3-1K-cs2">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Task Edit View Controller-->
+        <scene sceneID="fGL-Ou-76k">
+            <objects>
+                <viewController storyboardIdentifier="TaskEdit_ViewController" id="4a3-1K-cs2" customClass="TaskEdit_ViewController" customModule="ProjectRoutine" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Kgl-SF-JYs">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gh1-JE-yFO">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xaA-oN-1SU">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="750"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="ALj-ta-b0r">
+                                                <rect key="frame" x="15" y="20" width="384" height="395"/>
+                                                <subviews>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GtW-jF-lD3">
+                                                        <rect key="frame" x="0.0" y="0.0" width="384" height="50"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="50" id="llG-c7-vl6"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="23" translatesAutoresizingMaskIntoConstraints="NO" id="em1-eD-uAb">
+                                                        <rect key="frame" x="0.0" y="80" width="384" height="55"/>
+                                                        <subviews>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="btx-5r-1mT" customClass="TE_IconView" customModule="ProjectRoutine" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="0.0" width="180.5" height="55"/>
+                                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                                <color key="tintColor" name="pr_Pink"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="55" id="wkA-wr-AGD"/>
+                                                                </constraints>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="image" keyPath="buttonImage" value="pencil"/>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="buttonRadius">
+                                                                        <real key="value" value="10"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                                                        <real key="value" value="22"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="string" keyPath="title" value="アイコン"/>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ReO-S1-ANU" customClass="TE_ColorView" customModule="ProjectRoutine" customModuleProvider="target">
+                                                                <rect key="frame" x="203.5" y="0.0" width="180.5" height="55"/>
+                                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                                                        <real key="value" value="22"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="buttonRadius">
+                                                                        <real key="value" value="10"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="string" keyPath="title" value="色"/>
+                                                                    <userDefinedRuntimeAttribute type="image" keyPath="buttonImage" value="colorCircle"/>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </view>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wab-Qn-e3g" customClass="TE_TimerView" customModule="ProjectRoutine" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="165" width="384" height="100"/>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="100" id="bTW-Qd-d1d"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="anJ-Y1-qRI" customClass="TE_ScheduleView" customModule="ProjectRoutine" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="295" width="384" height="100"/>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="100" id="gXL-sI-5gb"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ok5-Ma-roG" customClass="TE_GoalView" customModule="ProjectRoutine" customModuleProvider="target">
+                                                        <rect key="frame" x="72" y="133" width="240" height="128"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="52" id="zLd-S9-5CM"/>
+                                                        </constraints>
+                                                    </view>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="414" id="8hu-ch-ASf"/>
+                                            <constraint firstAttribute="trailing" secondItem="ALj-ta-b0r" secondAttribute="trailing" constant="15" id="Elg-1i-tN0"/>
+                                            <constraint firstAttribute="height" constant="750" id="FDT-Hf-Khx"/>
+                                            <constraint firstItem="ALj-ta-b0r" firstAttribute="leading" secondItem="xaA-oN-1SU" secondAttribute="leading" constant="15" id="UA6-Gh-fVO"/>
+                                            <constraint firstItem="ALj-ta-b0r" firstAttribute="top" secondItem="xaA-oN-1SU" secondAttribute="top" constant="20" id="cjG-Su-Gu2"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="xaA-oN-1SU" firstAttribute="leading" secondItem="gh1-JE-yFO" secondAttribute="leading" id="84a-QR-48q"/>
+                                    <constraint firstAttribute="trailing" secondItem="xaA-oN-1SU" secondAttribute="trailing" id="Abb-KL-N1B"/>
+                                    <constraint firstItem="xaA-oN-1SU" firstAttribute="top" secondItem="9LX-xO-v0I" secondAttribute="top" id="MIM-oM-YNu"/>
+                                    <constraint firstItem="xaA-oN-1SU" firstAttribute="top" secondItem="khi-Mh-gwK" secondAttribute="top" id="SHw-Ed-V6R"/>
+                                    <constraint firstItem="khi-Mh-gwK" firstAttribute="trailing" secondItem="xaA-oN-1SU" secondAttribute="trailing" id="bgL-mw-5oS"/>
+                                    <constraint firstAttribute="bottom" secondItem="xaA-oN-1SU" secondAttribute="bottom" id="htT-em-4dh"/>
+                                    <constraint firstAttribute="bottom" secondItem="xaA-oN-1SU" secondAttribute="bottom" id="luo-rJ-UoK"/>
+                                    <constraint firstItem="xaA-oN-1SU" firstAttribute="leading" secondItem="gh1-JE-yFO" secondAttribute="leading" id="y3a-Uf-QBU"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="khi-Mh-gwK"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="9LX-xO-v0I"/>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="gh1-JE-yFO" firstAttribute="trailing" secondItem="LDN-oB-Fcq" secondAttribute="trailing" id="SgR-OX-qn5"/>
+                            <constraint firstItem="gh1-JE-yFO" firstAttribute="leading" secondItem="LDN-oB-Fcq" secondAttribute="leading" id="Uco-jr-yiA"/>
+                            <constraint firstItem="gh1-JE-yFO" firstAttribute="top" secondItem="LDN-oB-Fcq" secondAttribute="top" id="YUX-X2-lWA"/>
+                            <constraint firstItem="gh1-JE-yFO" firstAttribute="bottom" secondItem="LDN-oB-Fcq" secondAttribute="bottom" id="k00-hL-WHZ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="LDN-oB-Fcq"/>
+                    </view>
+                    <connections>
+                        <outlet property="selectColorButton" destination="ReO-S1-ANU" id="ahV-kR-KIL"/>
+                        <outlet property="selectIconButton" destination="btx-5r-1mT" id="2mA-jW-vu9"/>
+                        <outlet property="timerView" destination="Wab-Qn-e3g" id="8aT-EC-oYY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8AE-VP-82A" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="92.753623188405811" y="601.33928571428567"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="colorCircle" width="83.5" height="83.5"/>
+        <image name="pencil" width="49.5" height="49.5"/>
+        <namedColor name="pr_Pink">
+            <color red="1" green="0.17599999904632568" blue="0.33300000429153442" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
